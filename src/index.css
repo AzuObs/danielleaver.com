@@ -1,0 +1,7 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: -webkit-min-content;
+  min-width: min-content;
+}
