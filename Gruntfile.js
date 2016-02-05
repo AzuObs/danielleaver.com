@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     },
 
     replace: {
-      release: {
+      htmlHead: {
         options: {
           patterns: [{
             match: /common\/bower-components\/bootstrap\/dist\/css\/bootstrap.css/,
@@ -64,6 +64,18 @@ module.exports = function(grunt) {
         files: [{
           src: "release/index.html",
           dest: "release/index.html"
+        }]
+      },
+      deminifyHtmlLink: {
+        options: {
+          patterns: [{
+            match: /kanban.danielleaver.com/,
+            replacement: "https://kanban.danielleaver.com"
+          }]
+        },
+        files: [{
+          src: "release/home-page.html",
+          dest: "release/home-page.html"
         }]
       }
     },
@@ -92,7 +104,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-exec");
 
   grunt.registerTask("serve", ["exec:serve"]);
-  grunt.registerTask("build", [
+  grunt.registerTask("release", [
     "clean",
     "copy",
     "useminPrepare",
@@ -101,7 +113,8 @@ module.exports = function(grunt) {
     "cssmin:generated",
     "usemin",
     "exec:rmTmp",
-    "replace:release",
+    "replace:htmlHead",
+    "replace:deminifyHtmlLink",
     "htmlmin:release",
     "compress:archive"
   ]);
