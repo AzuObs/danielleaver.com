@@ -65,18 +65,6 @@ module.exports = function(grunt) {
           src: "release/index.html",
           dest: "release/index.html"
         }]
-      },
-      deminifyHtmlLink: {
-        options: {
-          patterns: [{
-            match: /kanban.danielleaver.com/,
-            replacement: "https://kanban.danielleaver.com"
-          }]
-        },
-        files: [{
-          src: "release/home-page.html",
-          dest: "release/home-page.html"
-        }]
       }
     },
 
@@ -114,7 +102,6 @@ module.exports = function(grunt) {
     "usemin",
     "exec:rmTmp",
     "replace:htmlHead",
-    "replace:deminifyHtmlLink",
     "htmlmin:release",
     "compress:archive"
   ]);
