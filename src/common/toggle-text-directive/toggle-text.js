@@ -26,7 +26,6 @@
 
 	module.controller("toggleTextCtrl", ["$scope", function($scope) {
 		$scope.toggleShowTransclude = function(e) {
-			console.log(e);
 			$scope.showTransclude = !$scope.showTransclude;
 		};
 
