@@ -2,7 +2,8 @@
 	"use strict";
 
 	var module = angular.module("app", [
-		"ui.router", "homeModule"
+		"ui.router", 
+		"homeModule"
 	]);
 
 
@@ -11,6 +12,11 @@
 		function($stateProvider, $urlRouterProvider) {
 			$stateProvider.state("danielleaver", {
 				abstract: true,
+				views: {
+					"footer-view@": {
+						templateUrl: "common/views/footer/footer-view.html"
+					}
+				},
 				url: ""
 			});
 

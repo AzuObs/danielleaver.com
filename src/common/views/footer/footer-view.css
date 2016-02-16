@@ -1,0 +1,17 @@
+.footer-view-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 20px 10px 0px;
+}
+
+.footer-view-container a {
+  margin-left: 5px;
+}
+
+.footer-view-container img {
+  opacity: 0.5;
+}
+
+.footer-view-container img:hover {
+  opacity: 1;
+}
