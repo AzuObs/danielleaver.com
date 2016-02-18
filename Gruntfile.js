@@ -23,16 +23,22 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      html: {
+        expand: true,
+        cwd: "src/",
+        src: "**/*.html",
+        dest: "release/"
+      },
       assets: {
         expand: true,
         cwd: "src/",
         src: "common/assets/**/*",
         dest: "release/"
       },
-      html: {
+      favicon: {
         expand: true,
         cwd: "src/",
-        src: "**/*.html",
+        src: "favicon.ico",
         dest: "release/"
       }
     },
