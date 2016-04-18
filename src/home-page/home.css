@@ -1,55 +1,68 @@
 .home-page-container {
-  align-items: center;
-  display: flex;
-  flex: 1 0 auto;
-  height: 100%;
-  min-height: 400px;
-  min-width: 900px;
-  padding-top: 20px;
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+    min-height: 400px;
+    min-width: 900px;
+    padding-top: 20px;
 }
 
 .left-container {
-  align-items: center;
-  background-color: #369;
-  border-radius: 190px;
-  color: #fff;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: column;
-  height: 380px;
-  justify-content: center;
-  margin: 0% 10% 0% 5%;
-  width: 380px;
+    align-items: center;
+    background-color: #369;
+    border-radius: 190px;
+    color: #fff;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    height: 380px;
+    justify-content: center;
+    margin: 0% 10% 0% 5%;
+    width: 380px;
 }
 
 .left-container > * {
-  margin: 0px;
+    margin: 0px;
 }
 
 .app-title {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .app-title h1 {
-  flex: 0 1 auto;
-  font-size: 65px;
-  font-weight: 900;
-  margin: 0px;
+    flex: 0 1 auto;
+    font-size: 65px;
+    font-weight: 900;
+    margin: 0px;
 }
 
 .left-container h4 {
-  font-style: italic;
+    font-style: italic;
 }
 
 .right-container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  width: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 380px;
 }
 
 .right-container .links {
-  padding: 5px 0px;
+    padding: 5px 0px;
+}
+
+.apps-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.app-container {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
 }
