@@ -14,9 +14,9 @@
       <div ng-repeat="app in homeCtrl.apps" class="app-container">
         <div class="app-name"><em>{{app.name}}</em></div>
         <div class="app-links">
-          <a ng-if="app.live" ng-href="{{app.live}}">LIVE</a
-          ><span ng-if="app.live">, </span>
-          <a ng-href="{{app.source}}" target="_blank">SOURCE</a>
+          <a ng-if="app.live" ng-href="{{app.live}}">live</a
+          ><span ng-if="app.live"> |</span>
+          <a ng-href="{{app.source}}" target="_blank">source</a>
         </div>
       </div>
     </div>
@@ -25,8 +25,8 @@
     <p>I am currently seeking a job as a front-end or back-end Javascript developer. Javascript rocks! But I would also be grateful to simply receive any feedback regarding my projects.</p>
     <p><span class="section-head">Education:</span> BSc (Hons) Computer Games Application Development, University of Abertay Dundee</p>
     <p class="links">
-      <span toggle-text="{{homeCtrl.email}}"><a href>EMAIL</a></span> |
-      <span toggle-text="{{homeCtrl.phone}}"><a href>PHONE</a></span>
+      <span toggle-text="{{homeCtrl.email}}"><a href>email</a></span> |
+      <span italic toggle-text="{{homeCtrl.phone}}"><a href>phone</a></span>
     </p>
   </div>
 </div>

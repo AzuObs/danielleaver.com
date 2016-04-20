@@ -34,7 +34,7 @@
     }];
 
     this.showPhone = false;
-    this.phone = "+44784 5417685";
-    this.email = "daniel@danielleaver.com";
+    this.phone = "unavailable";
+    this.email = "me@danielleaver.com";
   }]);
 })();
